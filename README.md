@@ -55,7 +55,7 @@ subtracting away the sum of its right-sibling. This image below shows
 how the left and right children acquire their prefix sums, given that
 the prefix sum of their parent node has already been computed.
 
-![alt text](https://github.com/mgabilo/prefix-sums-mpi/blob/master/prefix.png "prefix-sums-mpi execution phase II: computing the prefix-sums going down the tree")
+![alt text](https://github.com/mgabilo/prefix-sums-mpi/blob/master/partial.png "prefix-sums-mpi execution phase II: computing the prefix-sums going down the tree")
 
 
 At the bottom level, each node $p'$ of the $P$ nodes will have a

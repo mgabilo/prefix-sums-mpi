@@ -58,10 +58,10 @@ the prefix sum of their parent node has already been computed.
 ![alt text](https://github.com/mgabilo/prefix-sums-mpi/blob/master/partial.png "prefix-sums-mpi execution phase II: computing the prefix-sums going down the tree")
 
 
-At the bottom level, each node $p'$ of the $P$ nodes will have a
+At the bottom level, each node *p'* of the *P* nodes will have a
 prefix sum, which is the sum of all the elements in the distributed
-array up to the last element of the subarray of $p'$. At this point,
-each of the $P$ nodes in parallel will sequentially compute their
+array up to the last element of the subarray of *p'*. At this point,
+each of the *P* nodes in parallel will sequentially compute their
 remaining *N/P - 1* prefix sums, overwriting the original subarrays.
 
 
@@ -89,6 +89,14 @@ given arguments.
 ```
 mpirun -np 8 ./prefix 90000000 5
 ```
+
+The output looks like the following.
+
+```
+Prefix sum number 5 is 117.719892
+Took 0.436984 seconds
+```
+
 
 ## License
 
